@@ -1,0 +1,67 @@
+.headerbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  padding: 0px 15px;
+}
+
+.sticky {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.logo {
+  height: 45px;
+}
+
+#collapsibleNavbar {
+  justify-content: flex-end;
+  text-align: center;
+  background-color: #138de2;
+  margin: 0px -16px -8px -16px;
+}
+
+.nav-link {
+  color: white;
+}
+.active{
+  color: white !important;
+}
+.headerbar .dropdown:hover > .dropdown-menu {
+  cursor: pointer;
+  display: block;
+}
+
+.headerbar .dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #ffffff !important ;
+}
+.dropdown-item.active, .dropdown-item:active a{
+  color: #000 !important ;
+}
+.custom-dropdown{
+  background-color: #0d1d3e ;
+}
+.custom-dropdown li a{
+  color: white;
+}
+.custom-dropdown li a:hover{
+  color: black;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+	padding:0 1rem;
+}
+@media screen and (min-width: 768px) {
+  #collapsibleNavbar {
+    justify-content: flex-end;
+    text-align: center;
+    background-color: initial;
+    margin: initial;
+  }
+}
