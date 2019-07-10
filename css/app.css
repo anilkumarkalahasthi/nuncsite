@@ -5,15 +5,16 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.sticky {
-  background-color: #0d1d3e  !important;
-}
 
 .flex-container_item-wrapper_1 {
     padding: 20px;
     display: flex;
     width: 100%;
-    height: 150px;;
+    height: 80px;;
+}
+.color-green{
+  color: #1ca55f;
+  font-size: 35px;
 }
 .flex-container_text_1{
   font-size: 14px;
@@ -136,9 +137,6 @@ li>.text-white{
   border-radius: 6px;
 }
 
-/* .carousel-top-banner-height{
-  height: 630px;;
-} */
 
 .slider_carousel-indicators {
   right: initial;
@@ -238,6 +236,7 @@ li>.text-white{
   display: block;
   font-size: 25px;
 }
+
 @media screen and (min-width: 576px) {
   .custom-header {
     font-size: 38px;
@@ -262,15 +261,24 @@ li>.text-white{
   height: 6px;
   display: inline-block;
 }
+
+.custom-header--padding-top-testing {
+  padding-top: 50%;
+}
 @media screen and (min-width: 576px) {
   .custom-header--h-bar {
     display: block;
   }
 }
 .custom-header--padding-top {
-  padding-top: 150px;
+  padding-top: 12%;
 }
-
+.custom-header--padding-top-about-us{
+  padding-top: 15%;
+}
+.custom-header--padding-top_automotive {
+  padding-top: 100px;
+}
 .icon-text-box_image {
   /* width: 50px; */
   display: block;
@@ -402,7 +410,9 @@ li>.text-white{
 
   .top-slider-ecommerce-page{
   background-image: url("../img/e-commerce/header_bg1.png");
-  height: 600px;
+  background-size: 100% 100%;
+  height: 550px;
+  background-repeat: repeat;
 }
 }
 .top-slider_mobility-page {
@@ -425,29 +435,36 @@ li>.text-white{
 
 .top-slider_staff-agumentation-page {
   /*background-color: #2e308c;*/
-  height: initial;
+  /* height: initial;
   background-position-x: 50%;
-  background-size: cover;
+  background-size: cover; */
   background-image: url("../img/staff_agumentation/staffbg.jpg");
+   background-size: 100% 100%;
+  height: 450px;
+  background-repeat: repeat;
 }
 
-.top-slider-iot-page {
+/* .top-slider-iot-page {
   height: initial;
   background-position-x: 50%;
   background-size: cover;
   background-image: url("../img/staff_agumentation/staffbg.jpg");
-}
+} */
 
 @media screen and (min-width: 767px) {
   .top-slider_software-testing-page {
     background-color: #fff;
     background-image: url("../img/software-testing/theme_img.png");
-    height: 635px;
+    background-size: 100% 100%;
+    height: 550px;
+    background-repeat: repeat;
   }
   .top-slider_staff-agumentation-page {
     /*background-color: #fff;*/
     background-image: url("../img/staff_agumentation/staffbg.jpg");
-    height: 635px;
+    background-size: 100% 100%;
+    height: 450px;
+    background-repeat: repeat;
   }
 }
 
@@ -463,9 +480,9 @@ li>.text-white{
 }
 .top-slider_sales-force-page {
   background-image: url("../img/sales_force/sales_force_bg.png");
-  height: 700px;
-  background-position-x: 50%;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 550px;
+  background-repeat: repeat;
 }
 
 .banner-border-top {
@@ -516,7 +533,10 @@ li>.text-white{
   padding: 8px 15px;
   z-index: 1;
 }
-
+.flex-container_text_1 a{
+  text-decoration: none !important;
+  color:black;
+}
 .latest-thinking {
   border-top: 5px solid #138de2;
   border-radius: 8px;
@@ -556,7 +576,9 @@ li>.text-white{
   font-size: 20px;
   font-weight: bold;
 }
-
+.custom-kgs{
+  bottom: 15px !important;
+}
 .case-studies {
   background-image: url("../img/slider-1.jpg");
   background-size: cover;
@@ -598,6 +620,7 @@ li>.text-white{
   padding: 100px 0px 100px 0px;
   text-align: center;
 }
+
 .career-div_body {
   font-size: 24px;
   color: #0d1d3e;
@@ -745,6 +768,9 @@ li>.text-white{
   border-right: none;
   border-bottom: 1px dotted;
 }
+.flex-container_icon_home img{
+ border-radius:20px;
+}
 @media screen and (min-width: 576px) {
   .flex-container_border-right-dotted {
     border-right: 1px dotted;
@@ -756,8 +782,16 @@ li>.text-white{
   display: flex;
   width: 100%;
 }
+.e-Commerce-list ul li{
+  list-style: none;
+}
 .flex-container_icon {
   width: 30%;
+  text-align: center;
+  align-self: center;
+}
+.flex-container_icon_home {
+  width: 100%;
   text-align: center;
   align-self: center;
 }
@@ -814,7 +848,8 @@ li>.text-white{
   }
 }
 .flex-container-2_icon {
-  width: 100%;
+ max-width: 100%;
+  height: auto;
   align-self: center;
 }
 .flex-container-2_text {
@@ -871,7 +906,7 @@ li>.text-white{
 /*latest css*/
 
 .staff_agumentation_text_middle {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 .progresive-middle-text {
   font-size: 42px;
@@ -966,18 +1001,66 @@ hr {
   background-image: url("../img/progressive_web/header_img.png");
   height: 760px;
 }
+.top-slider_enterprise{
+  background-image: url("../img/enterprise/enterprise.jpg");
+  background-size:100% 100%;
+  height: 550px;
+  background-repeat: repeat;
+}
 .top-slider_digital-marketing{
   background-image: url("../img/digital-marketing/dg-bg.jpg");
-  height: 600px;
+  background-size:100% 100%;
+  height: 550px;
+  background-repeat: repeat;
 }
-
+.top-slider_kgs{
+  background-image: url("../img/kgs/krishi-gyan.jpg");
+  background-size:100% 100%;
+  height: 550px;
+  background-repeat: repeat;
+}
+.top-slider_green{
+  background-image: url("../img/green_phablet/green-phablet.jpg");
+  background-size:100% 100%;
+  height: 550px;
+  background-repeat: repeat;
+}
+.top-slider_smart{
+  background-image: url("../img/smarttoolkit/smarttool-kit.jpg");
+  background-size:100% 100%;
+  height: 550px;
+  background-repeat: repeat;
+}
+.top-slider_scotpro{
+  background-image: url("../img/scotpro/scout-pro.jpg");
+  background-size:100% 100%;
+  height: 550px;
+  background-repeat: repeat;
+}
+.home_links{
+  text-decoration: none;
+}
+.font-size-11{
+  font-size: 11px;
+}
+.custom-margin-top{
+  margin-top: 0.45rem !important;
+}
+.ai-image{
+  border-radius:10px;
+}
 .top-slider_chatbots{
   background-image: url("../img/chatbots/chatbot-bg.jpg");
   background-size:100% 100%;
   height: 550px;
   background-repeat: repeat;
+  display: flex;
+  align-items: center;
 }
-
+.custom-banner-chatbot{
+  margin-top: 15px;
+  margin-left: -8px;
+}
 
 /* .contact-mt{
   margin-top:-275px;
@@ -1059,12 +1142,17 @@ input[type="text"]:focus,
 
 }
 .top-slider-iot-page{
+
    background-image: url("../img/iot/iot_bg.jpg");
-  height: 450px;
+   background-size: 100% 100%;
+   height: 550px;
+   background-repeat:no-repeat; 
 }
 .top-slider-automotive-page{
    background-image: url("../img/automotive/header_bg.png");
-  height: 650px;
+   background-size: 100% 100%;
+   height: 550px;
+   background-repeat:no-repeat; 
 }
 .iot-secong-header{
   margin-top: -48px;
@@ -1141,8 +1229,20 @@ input[type="text"]:focus,
 .data-scienceimg-top{
  top: 100px;
 }
+.custom-header-enterprise{
+  margin-top: 20%;
+}
+.custom-header-kgs{
+  margin-top: 17%;
+}
 .custom-header-datascience{
-          margin-top: 100px;
+          margin-top: 32%;
+      }
+      .custom-header-smart{
+        margin-top: 20%;
+    }
+      .rpa-works-img{
+        width: 65%;
       }
 .top-slider_datascience {
       background-image: url("../img/data_science/bg-img.png");
@@ -1150,7 +1250,9 @@ input[type="text"]:focus,
       height: 550px;
       background-repeat: no-repeat;
 }
-
+.data_science_lf{
+  max-width: 50%;
+}
 .top-slider-crossplatform-page{
    background-image: url("../img/cross_plotform/header_newbg1.png");
    height: 590px;
@@ -1174,19 +1276,24 @@ input[type="text"]:focus,
     background: #fff;
 }
 .mt-top-cp{
-  top: 20%;
+  top: 15%;
 }
 .top-slider-block-chain{
   background-image: url("../img/block_chain/blockchain-bg.jpg");
   background-size: 100% 100%;
   height: 550px;
   background-repeat:no-repeat; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 .top-slider-ai{
   background-image: url("../img/ai/ai_bg.jpg");
   background-size: 100% 100%;
-  height: 550px;
+ height: 550px;
  background-repeat:no-repeat; 
+ display: flex;
+align-items: flex-end;
 }
 .top-slider-payment{
   background-image: url("../img/payment/Payment-Processing-Solutions.jpg");
@@ -1198,8 +1305,12 @@ height: 550px;
   background-image: url("../img/career/career_bg.jpg");
 background-size: 100% 100%;
 height: 550px;
- background-repeat:no-repeat; 
+ background-repeat:no-repeat;
+ display: flex;
+ align-items: flex-end;
+ justify-content: center; 
 }
+
 .top-slider-video-solutions{
   background-image: url("../img/video_solutions/Video-Solution.jpg");
 background-size: 100% 100%;
@@ -1211,6 +1322,8 @@ height: 550px;
 background-size: 100% 100%;
 height: 550px;
  background-repeat:no-repeat; 
+ display: flex;
+ align-items: flex-end;
 }
 .block_chaintext{
   width: 50%;
@@ -1232,9 +1345,20 @@ height: 550px;
 
 .top-slider-agriculture-page{
   background-image: url("../img/agriculture/header_bg.png");
-  height: 900px;
+  background-size: 100% 100%;
+  height: 550px;
+  background-repeat: repeat;
 }
-
+.middle_img{
+  width: 80%;
+  height: auto;
+}
+.agriculture_top_img{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
 .top-slider-bigdata-page{
   background-image: url("../img/big_data/big-data-bg.jpg");
   height: 520px;
@@ -1249,8 +1373,10 @@ height: 550px;
 }
 
 .top-slider-big-data-page{
-  background-image: url(../img/big_data/big-data-bg.jpg);
-  height: 600px;
+  background-image: url("../img/big_data/big-data-bg.jpg");
+  background-size: 100% 100%;
+  height: 550px;
+  background-repeat: repeat;
 }
 .img_down_text{
   position: absolute;
@@ -1296,6 +1422,12 @@ width:50%;
   }
 } */
 
+.carousel-inner{
+  max-height: 550px;
+  background-size: 100% 100%;
+
+  background-repeat: repeat;
+}
 @media only screen and (max-width: 600px) {
   .iot {
     /* border-top: 5px solid #138de2;*/
@@ -1323,8 +1455,6 @@ width:50%;
     margin-top: 0;
 }
 
-
- 
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1356,7 +1486,7 @@ input[type="text"],
 }
 
 .carosel_video{
-  height: 580px;
+  height: auto;
 }
 }
 .custom-card{
@@ -1394,5 +1524,11 @@ height: 247px;
   }
   #collapsibleNavbar{
     margin-top: -2px;
+  }
+}
+
+@media(max-width:385px){
+  .iot-mr {
+    margin-top: -80%;
   }
 }

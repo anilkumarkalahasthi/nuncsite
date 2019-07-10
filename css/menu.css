@@ -3,21 +3,26 @@
   top: 0;
   width: 100%;
   z-index: 30;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  padding: 0px 15px;
+  background-color: #f3f7ff !important;
+  padding: 0px 25px;
 }
 
 .sticky {
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: #f3f7ff !important;
 }
 
 .logo {
-  height: 45px;
+  height: 50px;
 }
-
+.navbar-brand{
+  padding:0 10px;
+  
+  background-color: #f3f7ff;
+}
 #collapsibleNavbar {
   justify-content: flex-end;
   text-align: center;
@@ -26,10 +31,13 @@
 }
 
 .nav-link {
-  color: white;
+  color: #000 !important;
+}
+.nav-link:hover {
+  color: #138de2 !important;
 }
 .active{
-  color: white !important;
+  color:  #138de2! important;
 }
 .headerbar .dropdown:hover > .dropdown-menu {
   cursor: pointer;
@@ -49,10 +57,10 @@
   background-color: #0d1d3e ;
 }
 .custom-dropdown li a{
-  color: white;
+  color:white;
 }
 .custom-dropdown li a:hover{
-  color: black;
+  color:#000;
 }
 .navbar-expand-md .navbar-nav .nav-link{
 	padding:0 1rem;
